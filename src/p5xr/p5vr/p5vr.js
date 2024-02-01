@@ -23,7 +23,7 @@ export default class p5vr extends p5xr {
     this.prevTouchX = undefined;
     this.prevTouchY = undefined;
     if (navigator?.xr) {
-      navigator.xr.requestSession('inline').then(this.__startSketch.bind(this));
+      navigator.xr.requestSession('immersive-vr').then(this.__startSketch.bind(this));
     }
   }
 
